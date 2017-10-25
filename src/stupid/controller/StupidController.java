@@ -2,6 +2,9 @@ package stupid.controller;
 
 public class StupidController
 {
+	
+	private String[] words;
+	private int[] numbers;
 	private int a = 0;
 	private int b = 0;
 	private int c = 0;
@@ -14,6 +17,34 @@ public class StupidController
 	
 	public void start()
 	{
+		
+		
+		
+		words = new String[5];
+		numbers = new int[5];
+		words[0] = "AR1 "; 
+		words[1] = "AR2 "; 
+		words[2] = "AR3 "; 
+		words[3] = "AR4 "; 
+		words[4] = "AR5"; 
+		
+		System.out.println(words[0] + words[1] + words[2] + words[3] + words[4]);
+		
+		for(String current : words)
+		{
+			System.out.println(current);
+		}
+		
+		for (int index = 0; index < numbers.length; index += 1)
+		{
+			numbers[index] = index+1;
+			System.out.println(numbers[index]);
+		}
+		
+		
+		
+		
+		
 		while(toggle)
 		{
 			a = a + 1;
